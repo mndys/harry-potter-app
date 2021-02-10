@@ -2,14 +2,10 @@
   "name": "javascript-app-template",
   "version": "0.0.1",
   "private": true,
-  "author": "neuefische GmbH",
+  "author": "Mandy Schwarze",
   "description": "",
   "keywords": [],
   "license": "ISC",
-  "contributors": [
-    "Lene Frei",
-    "Jerry Erbs"
-  ],
   "scripts": {
     "prettier:write": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
