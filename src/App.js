@@ -4,7 +4,7 @@ import Card from './components/Card'
 import createElement from './lib/createElement'
 
 export default function App() {
-  const header = AppHeader('Harry Potter App')
+  const header = AppHeader(`Aloh <i class="fas fa-unlock-alt"></i> mora`)
   document.body.append(header)
 
   getCharacters()
