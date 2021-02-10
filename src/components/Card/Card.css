@@ -1,5 +1,29 @@
 .Card {
   color: var(--color-primary);
-  border-bottom: 1px solid;
-  padding: 12px;
+  width: 100px;
+  text-align: center;
+}
+
+.characterName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.characterPicContainer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.characterPic {
+  position: absolute;
+  top: -5px;
+  left: -6px;
+  text-align: center;
+  width: 109px;
+  clip-path: circle(48px at center 54px);
 }
