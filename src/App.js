@@ -18,7 +18,7 @@ export default function App() {
     .catch(error => handleGetCharacterError(error))
 
   function createCards(people) {
-    const cards = people.map(person => Card(person.name, person.image))
+    const cards = people.map(person => Card(person))
     document.body.append(CardGrid(...cards))
   }
 
