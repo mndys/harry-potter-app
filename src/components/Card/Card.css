@@ -19,8 +19,7 @@
   height: 105px;
   width: 105px;
   clip-path: circle(52px at center center);
-  border: #000 6px;
-  background: #f009;
+  background: #000;
 }
 
 .Card__image {
