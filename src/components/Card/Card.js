@@ -8,6 +8,7 @@ export default function Card(name, image) {
     createElement('img', {
       className: 'Card__image',
       src: image,
+      alt: '',
     })
   )
   const cardName = createElement('h2', {
