@@ -10,7 +10,7 @@ export default function Card(name, image) {
       src: image,
     })
   )
-  const cardName = createElement('span', {
+  const cardName = createElement('h2', {
     className: 'Card__name',
     innerText: name,
   })

@@ -1,7 +1,7 @@
 .Card {
-  color: var(--color-primary);
   width: 100px;
   text-align: center;
+  color: var(--color-primary);
 }
 
 .Card__name {
@@ -10,13 +10,14 @@
   align-items: center;
   height: 30px;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.1;
 }
 
 .Card__image__container {
   position: relative;
-  width: 100px;
   height: 100px;
+  width: 100px;
 }
 
 .Card__image {
