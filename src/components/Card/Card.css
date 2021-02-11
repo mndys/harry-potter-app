@@ -1,25 +1,26 @@
 .Card {
-  color: var(--color-primary);
   width: 100px;
   text-align: center;
+  color: var(--color-primary);
 }
 
-.characterName {
+.Card__name {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 30px;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.1;
 }
 
-.characterPicContainer {
+.Card__image__container {
   position: relative;
-  width: 100px;
   height: 100px;
+  width: 100px;
 }
 
-.characterPic {
+.Card__image {
   position: absolute;
   top: -5px;
   left: -6px;

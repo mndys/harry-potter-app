@@ -1,7 +1,0 @@
-.PicGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  justify-items: center;
-  padding: 12px;
-}

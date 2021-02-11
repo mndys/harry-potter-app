@@ -2,21 +2,24 @@ import AppHeader from './components/AppHeader'
 import getCharacters from './services/getCharacters'
 import Card from './components/Card'
 import createElement from './lib/createElement'
-import PicGrid from './components/PicGrid'
+import CardGrid from './components/CardGrid'
 
 export default function App() {
   const header = AppHeader(`Aloh <i class="fas fa-unlock-alt"></i> mora`)
   document.body.append(header)
 
+  const people = []
+
   getCharacters()
-    .then(characters => createCards(characters))
+    .then(characters => {
+      people.push(...characters)
+      createCards(people)
+    })
     .catch(error => handleGetCharacterError(error))
 
-  function createCards(characters) {
-    const cards = characters.map(character =>
-      Card(character.name, character.image)
-    )
-    document.body.append(PicGrid(...cards))
+  function createCards(people) {
+    const cards = people.map(person => Card(person.name, person.image))
+    document.body.append(CardGrid(...cards))
   }
 
   function handleGetCharacterError(error) {
