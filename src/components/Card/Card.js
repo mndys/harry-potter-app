@@ -2,23 +2,18 @@ import './Card.css'
 import createElement from '../../lib/createElement'
 
 export default function Card(name, image) {
-  const characterPic = createElement(
+  const cardImage = createElement(
     'div',
-    { className: 'characterPicContainer' },
+    { className: 'Card__image__container' },
     createElement('img', {
-      className: 'characterPic',
+      className: 'Card__image',
       src: image,
     })
   )
-  const characterName = createElement('span', {
-    className: 'characterName',
+  const cardName = createElement('span', {
+    className: 'Card__name',
     innerText: name,
   })
 
-  return createElement(
-    'section',
-    { className: 'Card' },
-    characterPic,
-    characterName
-  )
+  return createElement('section', { className: 'Card' }, cardImage, cardName)
 }

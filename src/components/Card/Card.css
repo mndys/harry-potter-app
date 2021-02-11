@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.characterName {
+.Card__name {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,13 +13,13 @@
   line-height: 1.1;
 }
 
-.characterPicContainer {
+.Card__image__container {
   position: relative;
   width: 100px;
   height: 100px;
 }
 
-.characterPic {
+.Card__image {
   position: absolute;
   top: -5px;
   left: -6px;
