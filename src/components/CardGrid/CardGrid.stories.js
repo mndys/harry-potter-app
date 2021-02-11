@@ -6,12 +6,23 @@ export default {
   component: CardGrid,
 }
 
+const person = {
+  name: 'Character Name',
+  image: 'https://source.unsplash.com/random/500x500',
+}
+
 const exampleChildren = [
-  Card('Character Name', 'https://source.unsplash.com/random/500x500'),
-  Card('Character Name', 'https://source.unsplash.com/random/500x500'),
-  Card('Character Name', 'https://source.unsplash.com/random/500x500'),
-  Card('Character Name', 'https://source.unsplash.com/random/500x500'),
-  Card('Character Name', 'https://source.unsplash.com/random/500x500'),
+  Card(person),
+  Card(person),
+  Card(person),
+  Card(person),
+  Card(person),
+  Card(person),
+  Card(person),
+  Card(person),
+  Card(person),
+  Card(person),
+  Card(person),
 ]
 
 export const defaultCardGrid = () => CardGrid(...exampleChildren)
