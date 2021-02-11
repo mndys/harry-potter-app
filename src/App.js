@@ -8,14 +8,17 @@ export default function App() {
   const header = AppHeader(`Aloh <i class="fas fa-unlock-alt"></i> mora`)
   document.body.append(header)
 
+  const people = []
+
   getCharacters()
-    .then(characters => createCards(characters))
+    .then(characters => {
+      people.push(...characters)
+      createCards(people)
+    })
     .catch(error => handleGetCharacterError(error))
 
-  function createCards(characters) {
-    const cards = characters.map(character =>
-      Card(character.name, character.image)
-    )
+  function createCards(people) {
+    const cards = people.map(person => Card(person.name, person.image))
     document.body.append(CardGrid(...cards))
   }
 
