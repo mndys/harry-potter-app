@@ -1,15 +1,17 @@
-import createElement from '../../lib/createElement'
-import Grid from './Grid'
+import Card from '../Card/Card'
+import CardGrid from './CardGrid'
 
 export default {
-  title: 'Grid',
-  component: Grid,
+  title: 'CardGrid',
+  component: CardGrid,
 }
 
 const exampleChildren = [
-  createElement('span', { style: 'background: skyblue' }, 'top'),
-  createElement('span', { style: 'background: papayawhip' }, 'center'),
-  createElement('span', { style: 'background: skyblue' }, 'bottom'),
+  Card('Character Name', 'https://source.unsplash.com/random/500x500'),
+  Card('Character Name', 'https://source.unsplash.com/random/500x500'),
+  Card('Character Name', 'https://source.unsplash.com/random/500x500'),
+  Card('Character Name', 'https://source.unsplash.com/random/500x500'),
+  Card('Character Name', 'https://source.unsplash.com/random/500x500'),
 ]
 
-export const defaultGrid = () => Grid(...exampleChildren)
+export const defaultCardGrid = () => CardGrid(...exampleChildren)
