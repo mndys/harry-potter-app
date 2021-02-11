@@ -2,7 +2,7 @@ import AppHeader from './components/AppHeader'
 import getCharacters from './services/getCharacters'
 import Card from './components/Card'
 import createElement from './lib/createElement'
-import PicGrid from './components/PicGrid'
+import CardGrid from './components/CardGrid'
 
 export default function App() {
   const header = AppHeader(`Aloh <i class="fas fa-unlock-alt"></i> mora`)
@@ -16,7 +16,7 @@ export default function App() {
     const cards = characters.map(character =>
       Card(character.name, character.image)
     )
-    document.body.append(PicGrid(...cards))
+    document.body.append(CardGrid(...cards))
   }
 
   function handleGetCharacterError(error) {

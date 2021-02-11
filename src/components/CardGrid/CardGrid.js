@@ -1,11 +1,11 @@
 import createElement from '../../lib/createElement'
-import './PicGrid.css'
+import './CardGrid.css'
 
-export default function PicGrid(...children) {
+export default function CardGrid(...children) {
   return createElement(
     'div',
     {
-      className: 'PicGrid',
+      className: 'CardGrid',
     },
     ...children
   )
