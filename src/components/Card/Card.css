@@ -16,14 +16,15 @@
 
 .Card__image__container {
   position: relative;
-  height: 100px;
-  width: 100px;
+  height: 105px;
+  width: 105px;
+  clip-path: circle(52px at center center);
 }
 
 .Card__image {
   position: absolute;
-  top: -5px;
-  left: -6px;
+  top: -1px;
+  left: -2px;
   text-align: center;
   width: 109px;
   clip-path: circle(48px at center 54px);

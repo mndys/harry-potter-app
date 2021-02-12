@@ -1,13 +1,14 @@
 .AppHeader {
-  background: var(--color-primary);
-  color: var(--color-white);
+  background: var(--color-dark);
+  color: var(--color-light);
   padding: 12px;
 }
 
 .AppHeader h1 {
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 2em;
   text-align: center;
+  font-family: 'harryPotter', 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
 .AppHeader i {

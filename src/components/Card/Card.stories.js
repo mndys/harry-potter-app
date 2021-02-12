@@ -5,5 +5,10 @@ export default {
   component: Card,
 }
 
-export const defaultCard = () =>
-  Card('FirstName LastName', 'https://source.unsplash.com/random/500x500')
+const person = {
+  name: 'Character Name',
+  image: 'https://source.unsplash.com/random/500x500',
+  house: 'Ravenclaw',
+}
+
+export const defaultCard = () => Card(person)

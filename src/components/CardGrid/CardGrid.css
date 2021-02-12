@@ -1,7 +1,7 @@
 .CardGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, 6rem);
-  gap: 15px;
+  gap: 25px;
   justify-content: space-between;
   padding: 18px;
 }
