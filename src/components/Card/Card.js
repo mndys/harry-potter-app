@@ -5,10 +5,10 @@ export default function Card(person) {
   const { name, image, house } = person
 
   const houseColors = {
-    Gryffindor: 'crimson',
-    Hufflepuff: 'gold',
-    Ravenclaw: 'midnightblue',
-    Slytherin: 'seagreen',
+    Gryffindor: 'var(--color-gryff)',
+    Hufflepuff: 'var(--color-huff)',
+    Ravenclaw: 'var(--color-rave)',
+    Slytherin: 'var(--color-slyth)',
     '': '#0000',
   }
 
