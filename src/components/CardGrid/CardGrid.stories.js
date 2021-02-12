@@ -9,6 +9,7 @@ export default {
 const person = {
   name: 'Character Name',
   image: 'https://source.unsplash.com/random/500x500',
+  house: 'Slytherin',
 }
 
 const exampleChildren = [
